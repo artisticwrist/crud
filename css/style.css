@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+
+
+body .bg{
+    position: relative;
+    width: 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.bg .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.562);
+    padding: 20px;
+}
+
+.overlay nav{
+    color: #ffff;
+}
+
+.overlay section{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg section h1{
+    font-size: 90px;
+}
+
+.bg section p{
+    font-size: 14px;
+}
+
+.bg section h1, .bg section p{
+    margin: 10px 0px;
+    color: #ffff;
+}
+
+
+body .signup-form{
+    width: 40%;
+    background:#ffff;
+    padding: 20px;
+}
+
+
+.signup-form nav{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+}
+
+nav .ham-burger{
+    width: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.ham-burger .burger{
+    width: 100%;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.734);
+    border-radius: 10px;
+
+}
+
+section.section-form{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.signup-form form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+}
+
+form input{
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    background: none;
+    padding: 15px 0px;
+    width: 100%;
+}
+
+form button.signup-btn{
+    width: 250px;
+    height: 45px;
+    border: none;
+    border-radius: 50px;
+    background: rgb(95,228,111);
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.form-group {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.form-group button{
+    background: none;
+    border: none;
+    color: rgb(61, 61, 61);
+    font-size: 14px;
+    cursor: pointer;
+    margin: 5px 0px;
+}
+
+
+form h3, form p, form input, form button{
+    margin: 8px 0px;
+}
+
+form h3{
+    width: 100%;
+    text-align: left;
+    font-size: 35px;
+    color: rgb(61, 61, 61);
+}
+
+form p{
+    width: 100%;
+    text-align: left;
+    color: rgba(61, 61, 61, 0.836);
+}
+p.have-account{
+    margin: 20px 0px;
+    text-align: center;
+    color: rgb(61, 61, 61);
+}
+
+p a{
+    text-decoration: none;
+    color: rgb(95,228,111);
+}
+
+.signup-form p{
+    font-size: 14px;
+}
+
+footer p{
+    text-align: center;
+    color: rgba(61, 61, 61, 0.712);
+}
+
+@media only screen and (max-width:890px){
+
+    .bg{
+        width: 50%;
+    }
+
+    body .signup-form{
+        width: 50%;
+    }
+
+
+}
+
+@media only screen and (max-width:768px){
+
+    .bg{
+        display: none;
+    }
+
+    body .signup-form{
+        width: 100%;
+    }
+
+    
+    .signup-form form{
+        width: 300px;
+    }
+    
+}
