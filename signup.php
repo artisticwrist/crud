@@ -42,7 +42,7 @@ if(isset($_POST['submit'])){
     <div class="signup-flex bg" style="background-image: url(./images/Green.jpg);">
         <div class="overlay">
             <nav>
-                <h1>SIGNUP NOW</h1>
+                <h1>Add New Account</h1>
             </nav>
             <section>
                 <h1>Welcome</h1>
